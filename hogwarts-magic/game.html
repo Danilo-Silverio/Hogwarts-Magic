@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="game.css">
+    <title>Game Quiz</title>
+    <style>
+           
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav class="links-pages">
+                <img src="Resources/01.Home/logo.png" id="website-brand" alt="Hogwarts Magic Logo"> 
+                <a href="/index.html#home">HOME</a>
+                <a href="/index.html#become-a-wizard">BECOME A WIZARD</a>
+                <a href="/index.html#houses">HOUSES</a>
+                <a href="/index.html#into-hogwarts">INTO HOGWARTS</a>
+                <a href="sorting-hat.html">SORTING HAT</a>
+                <a href="quizzes.html">QUIZ</a>
+            </nav>
+        </div>
+    </header>
+<main>
+<div class="container">
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question"></h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+</div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

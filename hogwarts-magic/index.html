@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="styles.css">
+    <title>Welcome to Hogwarts Magic!</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;}     
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <nav class="links-pages">
+            <img src="Resources/01.Home/logo.png" id="website-brand" alt="Hogwarts Magic Logo"> 
+            <a href="#home">HOME</a>
+            <a href="#become-a-wizard">BECOME A WIZARD</a>
+            <a href="#houses">HOUSES</a>
+            <a href="#into-hogwarts">INTO HOGWARTS</a>
+            <a href="sorting-hat.html">SORTING HAT</a>
+            <a href="quizzes.html">QUIZ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section id="home">
+    <picture>
+        <source media="(max-width:700px)" srcset="Resources/06.Responsive/home-page-responsive.png">
+        <img src="Resources/01.Home/background-home-page.png" class="image-home-page" alt="Home Page Hogwarts Magic">
+    </picture>
+</section>
+<section id="become-a-wizard">
+    <picture>
+        <source media="(max-width:700px)" srcset="Resources/06.Responsive/background-letter-responsive.png">
+        <img src="Resources/02.Become-a-Wizard/background-letter.png" class="image-become-a-wizard" alt="Letter of Hogwarts">
+    </picture>
+</section>
+<section id="houses">
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="radio" id="slide1" checked="true">
+            <input type="radio" name="radio" id="slide2">
+            <input type="radio" name="radio" id="slide3">
+            <input type="radio" name="radio" id="slide4">
+            <input type="radio" name="radio" id="slide5">
+   
+            <div class="slide s1">
+                <picture>
+                    <source media="(max-width:700px)" srcset="Resources/06.Responsive/hogwarts-houses-responsive.png">
+                        <img src="Resources/03.Houses/hogwarts-houses.png" alt="Houses of Hogwarts">
+                </picture>
+            </div>
+
+            <div class="slide">
+                <picture>
+                    <source media="(max-width:700px)" srcset="Resources/06.Responsive/gryffindor-responsive.png">
+                        <img src="Resources/03.Houses/gryffindor.png" alt="Image Gryffindor House">
+                </picture>
+            </div>
+
+            <div class="slide">
+                <picture>
+                    <source media="(max-width:700px)" srcset="Resources/06.Responsive/slytherin-responsive.png">
+                        <img id="slide" src="Resources/03.Houses/slytherin.png" alt="Image Slytherin House">
+                </picture>        
+            </div>
+
+            <div class="slide">
+                <picture>
+                    <source media="(max-width:700px)" srcset="Resources/06.Responsive/hufflepuff-responsive.png">
+                        <img id="slide" src="Resources/03.Houses/hufflepuff.png" alt="Image Hufflepuff House">
+                </picture>
+            </div>
+
+            <div class="slide">
+                <picture>
+                    <source media="(max-width:700px)" srcset="Resources/06.Responsive/ravenclaw-responsive.png">
+                        <img id="slide" src="Resources/03.Houses/ravenclaw.png" alt="Image Ravenclaw House">
+                </picture>
+            </div>       
+
+            <div class="navigation">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                <label class="bar" for="slide4"></label>
+                <label class="bar" for="slide5"></label>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="into-hogwarts">
+    <h1>Let's dive in to the world of Hogwarts Magic</h1>
+    <img src="Resources/04.Into-Hogwarts/into-hogwarts.gif" alt="Gif to welcome you to Hogwarts">
+</section>
+</main>
+<footer class="footer">
+        <h1>This website was created for educational purposes only. It was inspired by Wizarding World and is just a project to develop my Front End skills using HTML, JS and CSS. </h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/danilogsilverio/" target="_blank" class="nav-footer">Linkedin</a>
+                <a href="https://github.com/Danilo-Silverio" target="_blank" class="nav-footer">GitHub</a>
+                <a href="https://www.instagram.com/danilo_silveri/" target="_blank" class="nav-footer">Instagram</a>
+            </nav>
+</footer>
+</body>
+</html>              
