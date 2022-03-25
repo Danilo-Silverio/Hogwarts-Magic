@@ -1,0 +1,138 @@
+/*INITIAL PRESETS------------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;}
+
+   
+    .header{
+        width: 100%;
+        position: fixed;}
+
+        #website-brand{
+            position: fixed;
+            margin-left: 49%;
+            transform: translate(-50%);
+            width: auto;
+            height: 80px;
+            top: 0;
+            padding-top: 10px;
+            z-index: 1;}
+
+            .links-pages{
+                display: flex;
+                flex-direction: row;
+                position: fixed;
+                width: 100%;
+                padding-top: 100px;
+                background-color: rgba(143, 55, 55, 0.007);
+                z-index: 250;}
+               
+
+                .links-pages:hover{
+                    background-color: rgba(0, 0, 0, 0.8);
+                    transition: all 1.5s;}
+
+                    .links-pages a{
+                        padding: 15px 0;
+                        flex-grow: 1;
+                        transition: all 1.2s;
+                        text-align: center;
+                        font-family: 'Cormorant Upright', serif;
+                        font-size: 100%;
+                        color: white;
+                        border-top: 1px solid rgb(214, 211, 211);
+                        font-weight: bold;
+                        text-decoration: none;
+                        background-color: rgba(0, 0, 0, 0.13);
+                        z-index: 200;}
+
+                        .links-pages a:hover{
+                            background-color: rgba(255,255,255,0.4);
+                            border-bottom: 1px rgba(74, 1, 158, 0.836);
+                            padding-bottom: 2px;
+                            border-bottom-style: solid;}
+
+                                    @media (max-width: 600px) {
+                                        .links-pages{
+                                            display: flex;
+                                            flex-direction: flex;
+                                            width: 100%;
+                                            position: static;}}
+
+                                    @media (max-width: 600px) {
+                                        .links-pages a{
+                                            font-size: 50%;}}
+
+/*QUIZ------------------------------------------------------------------------------------------------------------------------*/           
+.container{
+    background-image: url("Resources/08.Quizzes/olivanders.jpg");
+    background-size: cover;
+    font-family: 'Cormorant Upright', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;} 
+
+    .quiz-container{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        width: 700px;
+        margin-top: 150px;
+        overflow: hidden;}
+        
+        .quiz-header{
+            padding: 1rem;
+            font-family: 'Cormorant Upright', serif;
+            background-image: url('Resources/08.Quizzes/quiz-background.jpg');
+            background-size: cover;
+            color: rgb(10, 10, 10);}
+
+            h2{
+                padding: 1rem;
+                text-align: center;
+                margin: 0;
+                font-weight: 900;}
+
+                ul{
+                    list-style-type: none;
+                    padding: 0;}
+
+                    ul li{
+                        font-size: 1.2rem;
+                        margin: 1.5rem 0;
+                        background-color: rgb(230, 226, 224, 0.4);
+                        font-weight: bold;
+                        border-radius: 20px;
+                        font-family: 'Cormorant Upright', serif;
+                        color: rgb(14, 13, 13);}
+
+                        ul li label{
+                            cursor: pointer;}
+
+                            button{
+                                background-color: rgb(37, 34, 32);
+                                color: snow;
+                                border: none;
+                                display: block;
+                                width: 100%;
+                                cursor: pointer;
+                                font-size: 1rem;
+                                font-family: arial;
+                                padding: 1.3rem;}
+
+                                button:hover{
+                                    background-color: rgb(54, 41, 41);
+                                    font-size: 1.2rem;}
+
+                                    button:focus{
+                                        outline: none;
+                                        background-color: rgb(9, 129, 79);}

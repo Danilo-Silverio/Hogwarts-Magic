@@ -1,0 +1,255 @@
+/*PAGE and HEADER -----------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+
+*{margin: 0; padding: 0;}
+
+    body::-webkit-scrollbar {
+        width: 6px;}
+      
+      body::-webkit-scrollbar-track {
+        background: linear-gradient(to bottom, rgb(0, 0, 0),rgb(44, 44, 63));}
+      
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(133, 133, 133);       
+            border: 1px solid rgb(44, 44, 63);}
+
+html{
+    scroll-behavior: smooth;}
+
+    .header{
+        width: 100%;
+        position: fixed;}
+
+        #website-brand{
+            position: fixed;
+            margin-left: 49%;
+            transform: translate(-50%);
+            width: auto;
+            height: 80px;
+            top: 0;
+            padding-top: 10px;
+            z-index: 1;}
+
+            .links-pages{
+                display: flex;
+                flex-direction: row;
+                position: fixed;
+                width: 100%;
+                padding-top: 100px;
+                background-color: rgba(143, 55, 55, 0.007);
+                z-index: 250;}
+               
+
+                .links-pages:hover{
+                    background-color: rgba(0, 0, 0, 0.8);
+                    transition: all 1.5s;}
+
+                    .links-pages a{
+                        padding: 15px 0;
+                        flex-grow: 1;
+                        transition: all 1.2s;
+                        text-align: center;
+                        font-family: 'Cormorant Upright', serif;
+                        font-size: 100%;
+                        color: white;
+                        border-top: 1px solid rgb(214, 211, 211);
+                        font-weight: bold;
+                        text-decoration: none;
+                        background-color: rgba(0, 0, 0, 0.13);
+                        z-index: 200;}
+
+                        .links-pages a:hover{
+                            background-color: rgba(255,255,255,0.4);
+                            border-bottom: 1px rgba(74, 1, 158, 0.836);
+                            padding-bottom: 2px;
+                            border-bottom-style: solid;}
+
+                                    @media (max-width: 600px) {
+                                        .links-pages{
+                                            display: flex;
+                                            flex-direction: flex;
+                                            width: 100%;
+                                            position: static;}}
+
+                                    @media (max-width: 600px) {
+                                        .links-pages a{
+                                            font-size: 50%;}}
+
+
+
+/*SECTIONS--------------------------------------------------------------------------------------------------------*/
+
+    section:nth-of-type(1){
+        width: 100vw;
+        height: 100vh;}
+
+        .image-home-page{
+            width: 100%;
+            height: 100%;}
+            
+            section:nth-of-type(2){
+                height: 100vh;
+                width: 100vw;}
+
+                .image-become-a-wizard{
+                    width: 100%;
+                    height: 100%;}
+
+                    section:nth-of-type(3){}
+                    
+                        section:nth-of-type(4){
+                            width: 100vw;
+                            height: 100vh;
+                            background-image: url("Resources/03.Houses/into-hogwarts-background.jpg");
+                            background-size: cover;}
+
+
+            
+/*SLIDE SHOW-------------------------------------------------------------------------------------------------------------*/
+
+    .content{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        z-index: -150;}
+
+        .navigation{
+            position: absolute;
+            bottom: 20px;
+            top: 290%;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;}
+
+            .bar{
+                width: 40px;
+                height: 19px;
+                border: 1px solid rgb(182, 182, 182);
+                background-color: rgba(124, 124, 124, 0.3);
+                margin: 8px;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 1s ease-in-out;}
+
+                .bar:hover{
+                    background-color: snow;}
+
+                    input{
+                        display: none;}
+
+                        .slides{
+                            display: flex;
+                            width: 500%;
+                            height: 100%;}
+
+                            .slide{
+                                width: 20%;
+                                transition: all 1.8s;}
+
+                                .slide img{
+                                    width: 100%;
+                                    height: 100%;}
+
+                                    #slide1:checked ~ .s1{
+                                        margin-left: 0;}
+
+                                        #slide2:checked ~ .s1{
+                                            margin-left: -20%;}
+
+                                            #slide3:checked ~ .s1{
+                                                margin-left: -40%;}
+
+                                                #slide4:checked ~ .s1{
+                                                    margin-left: -60%;}
+
+                                                    #slide5:checked ~ .s1{
+                                                        margin-left: -80%;}
+
+                                                        #slide6:checked ~ .s1{
+                                                            margin-left: -100%;}
+
+    
+
+/*INTO HOGWARTS - VIDEO-----------------------------------------------------------------------------------------------------------*/
+
+#into-hogwarts{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+    #into-hogwarts h1{
+        color: white;
+        font-family: 'Cormorant Upright', serif;
+        font-size: 40px;
+        padding-top: 130px;}
+
+        #into-hogwarts img{
+            width: 80%; 
+            height: 57%;
+            margin-top: 40px;
+            border-radius: 50px;
+            border: none;} 
+
+            @media (max-width: 600px) {
+                #into-hogwarts{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;}}
+
+                @media (max-width: 600px) {
+                    #into-hogwarts img{
+                        width: 70%;
+                        height: 250px;
+                        border-radius: 50px;}}
+
+                        @media (max-width: 600px) {
+                            #into-hogwarts h1{
+                                font-size: 20px;}}
+
+
+/*FOOTER-----------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    background-image: url('Resources/05.Footer/footer.jpg');
+    padding: 10px;
+    border-top: 1px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;}
+
+    .footer:hover{
+        background-image: url('Resources/05.Footer/footer-hover.jpg');
+        transition: all 1s;}
+
+        .footer h1{
+            font-size: 13px;
+            font-family: 'Cormorant Upright', serif;
+            color: white;
+            padding-top: 5px;}
+
+                    .footer nav{
+                        padding-top: 5px;}
+
+                        .footer nav a{
+                            color: rgb(255, 255, 255);
+                            text-decoration: none;
+                            font-size: 13px;
+                            padding: 3px}
+                            
+                            .footer nav a:hover{
+                                text-decoration: underline;
+                                background-color: rgba(255, 255, 255, 0.603);
+                                border-radius: 10px;}
+                                
+
+
+
+        
+
+                
